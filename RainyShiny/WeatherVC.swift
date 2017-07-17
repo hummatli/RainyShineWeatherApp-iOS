@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WheatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var currentTempLbl: UILabel!
@@ -23,6 +23,8 @@ class WheatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        print(CURRENT_WEATHER_URL)
         
     }
     
