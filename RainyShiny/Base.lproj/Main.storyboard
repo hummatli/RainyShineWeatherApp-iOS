@@ -83,7 +83,7 @@
                                 <rect key="frame" x="0.0" y="300" width="375" height="367"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="8ak-zM-guF">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="8ak-zM-guF">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8ak-zM-guF" id="wQi-JN-VLL">
@@ -149,6 +149,7 @@
                                                 <constraint firstItem="xIb-2e-Wdp" firstAttribute="leading" secondItem="wQi-JN-VLL" secondAttribute="leadingMargin" constant="8" id="xX0-EA-7kb"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -164,6 +165,14 @@
                             <constraint firstAttribute="trailing" secondItem="lrh-MX-Sjd" secondAttribute="trailing" id="xO5-TV-OLk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentTempLbl" destination="mCM-Xu-L3C" id="yBY-T4-VBd"/>
+                        <outlet property="currentWeatherIV" destination="scM-ce-0NZ" id="Qlc-dd-1P2"/>
+                        <outlet property="currentWeatherTypeLbl" destination="BSf-6B-PoT" id="brD-QN-351"/>
+                        <outlet property="dateLbl" destination="4DV-OL-Ey4" id="TaI-Es-QIE"/>
+                        <outlet property="locationLbl" destination="gdp-Fz-4AU" id="u3W-7f-miD"/>
+                        <outlet property="tableView" destination="lrh-MX-Sjd" id="PTz-Ym-HS9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
