@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+
+func kelvinToFaranheit(tempKelvin: Double) -> Double {
+    let kelvinToFarenheitPreDivision = (tempKelvin * (9 / 5) - 459.67)
+    
+    let kelvinToFarenheit = Double(round(10 * kelvinToFarenheitPreDivision))
+    
+    return kelvinToFarenheit
+}
